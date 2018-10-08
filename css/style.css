@@ -1,0 +1,96 @@
+.bg-color {
+  background: white;
+}
+
+:root {
+  --wesbos: #ffc600;
+}
+
+.menu {
+  display: none;
+}
+
+.menu--is-visible {
+  display: grid;
+}
+
+
+.item__header {
+  display: flex;
+  align-items: baseline;
+}
+
+.item__title {
+  font: 35px cookie, cursive;
+  color: var(--wesbos);
+  letter-spacing: 2px;
+  margin-bottom: 0;
+}
+
+.item__dots {
+  flex: 1;
+  border-bottom: 1px dashed #aaa;
+  margin: 0 15px;
+}
+
+.item__price {
+  color: var(--wesbos);
+  font: 31px cookie, cursive;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+@media (min-width:768px) {
+  .buttons-container {
+    margin-bottom: 35px;
+  }
+}
+
+.button {
+  margin: 5px 15px;
+  padding: 10px 20px;
+  border: 1px solid var(--wesbos);
+  border-radius: 3px;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.highlight {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  background: var(--wesbos);
+  border-radius: 3px;
+  z-index: -1;
+  transition: .23s;
+}
+.wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h2 {
+  display: inline-block;
+  border-bottom: 4px solid var(--wesbos);
+  margin-top: 0;
+  font: 50px cookie, cursive;
+}
+
+.fb-ic {
+  font-size: 40px;
+  color: white;
+}
+
+.location-icon, .open-times-icon, .phone-number-icon{
+  font-size: 50px;
+}
